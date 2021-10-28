@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        background: rgb(229, 68, 68);
+        background: radial-gradient(
+          circle,
+          rgba(229, 68, 68, 1) 0%,
+          rgba(123, 5, 36, 1) 91%,
+          rgba(166, 27, 60, 1) 94%,
+          rgba(252, 70, 107, 1) 100%
+        );
+      }
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        background: rgb(229, 68, 68);
+        background: radial-gradient(
+          circle,
+          rgba(229, 68, 68, 1) 0%,
+          rgba(123, 5, 36, 1) 91%,
+          rgba(166, 27, 60, 1) 94%,
+          rgba(252, 70, 107, 1) 100%
+        );
+      }
+      @media (min-width: 768px) {
+        .jumbotron {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+      }
+
+      .jumbotron p:last-child {
+        margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+        font-weight: 300;
+      }
+
+      .jumbotron .container {
+        max-width: 40rem;
+      }
+      .img-card {
+        height: 30vh;
+        min-width: 150px;
+        object-fit: cover;
+      }
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      footer p {
+        margin-bottom: 0.25rem;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .container {
+        background: rgb(229, 68, 68);
+        background: radial-gradient(
+          circle,
+          rgba(229, 68, 68, 1) 0%,
+          rgba(123, 5, 36, 1) 91%,
+          rgba(166, 27, 60, 1) 94%,
+          rgba(252, 70, 107, 1) 100%
+        );
+      }
+
+      .bgcolor {
+        background: rgb(229, 68, 68);
+        background: radial-gradient(
+          circle,
+          rgba(229, 68, 68, 1) 0%,
+          rgba(123, 5, 36, 1) 91%,
+          rgba(166, 27, 60, 1) 94%,
+          rgba(252, 70, 107, 1) 100%
+        );
+        border-color: rgb(0, 0, 0);
+        border-width: 0.2rem;
+      }
+      .btnborder {
+        background: rgb(34, 193, 195);
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(253, 187, 45, 1) 100%
+        );
+        border-color: rgb(5, 138, 65);
+        border-width: 0.2rem;
+        border-radius: 0.5rem;
+        color: white;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <title>Strive Book Shop</title>
+  </head>
+  <body>
+    <header class="bgcolor">
+      <div class="navbar navbar-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <form class="form-inline mt-2 mt-md-0 w-100" _lpchecked="1">
+              <input
+                class="form-control mr-sm-2 btnborder"
+                type="text"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <strong></strong>
+          </a>
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 btnborder"
+            type="submit"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Strive Book Shop</h1>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light bgcolor">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <!--JS-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
