@@ -1,6 +1,12 @@
 window.onload = () => {
   getBooks();
 };
+let books=[];
+
+let shoppingCartList=[];
+
+let filteredBooks=[];
+
 const getBooks = () => {
   fetch("https://striveschool-api.herokuapp.com/books", {})
     .then((jsonData) => {
@@ -66,3 +72,9 @@ const skipBook = (e) => {
 };
 
 const addBook = (e) => {};
+
+//Search bar
+function search(query) {
+  if(query.length<3) return
+  filterdBooks= books.
+}

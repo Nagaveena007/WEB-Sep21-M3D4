@@ -126,24 +126,13 @@
   <body>
     <header class="bgcolor">
       <div class="navbar navbar-dark shadow-sm">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <form class="form-inline mt-2 mt-md-0 w-100" _lpchecked="1">
-              <input
-                class="form-control mr-sm-2 btnborder"
-                type="text"
-                placeholder="Search"
-                aria-label="Search"
-              />
-            </form>
-            <strong></strong>
-          </a>
-          <button
-            class="btn btn-outline-success my-2 my-sm-0 btnborder"
-            type="submit"
-          >
-            Search
-          </button>
+        <div class="container-fluid d-flex justify-content-between">
+          <input
+            type="text"
+            class="p-2 w-100 btnborder"
+            placeholder="search..."
+            oninput="search(this.value)"
+          />
         </div>
       </div>
     </header>
