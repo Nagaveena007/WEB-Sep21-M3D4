@@ -1,13 +1,13 @@
 window.onload = () => {
   getBooks();
 };
-let books=[];
+let books = [];
 
-let shoppingCartList=[];
+let shoppingCartList = [];
 
-let filteredBooks=[];
+let filteredBooks = [];
 
-const getBooks = () => {
+const getBooks = (books) => {
   fetch("https://striveschool-api.herokuapp.com/books", {})
     .then((jsonData) => {
       console.log(jsonData);
@@ -27,33 +27,36 @@ const getBooks = () => {
         col.className = "col-md-4";
 
         col.innerHTML = `
-          <div class="card mb-4 shadow-sm bgcolor mt-4">
+          <div class="card mb-4 shadow-sm  mt-4">
   <img src="${book.img}" class="img-card">
   <div class="card-body">
-    <p class="card-text">
-    <title>${book.title}</title>
-  
-    </p>
+  <div class="w-100">    
+       <h5 class="card-text">
+        ${book.title}
+        </h5>
+      </div>
+      <small class="">${book.category}</small>
+
     <div
       class="d-flex justify-content-between align-items-center"
     >
+    
       <div class="btn-group">
         <button
           type="button"
-          class="btn btn-sm btn-outline-secondary btnborder"
+          class="btn btn-sm btn-outline-secondary bg-success text-dark"
           onclick="addBook(event)"
           data-bs-toggle="modal" data-bs-target="#exampleModal"
         >
-          Add
+        ${"$ " + book.price}
         </button>
         <button
           type="button" id="hide" onclick="skipBook(event)"
-          class="btn btn-sm btn-outline-secondary btnborder"
+          class="btn btn-sm btn-outline-secondary bg-primary"
         >
-          skip
+          skip >>>
         </button>
       </div>
-      <small class="text-white">${book.category}</small>
     </div>
   </div>
   </div>
@@ -75,6 +78,9 @@ const addBook = (e) => {};
 
 //Search bar
 function search(query) {
-  if(query.length<3) return
-  filterdBooks= books.
+  if (query.length < 3) return;
+  filteredBooks = books.filter((body) =>
+    body.title.toLowerCase().includes(query.toLowerCase)
+  );
+  getBooks(filteredBooks);
 }
